@@ -19,7 +19,7 @@ public class GenericsEx {
         }
         return true;
     }
-    public static <E> int countPrimeNumbers(ArrayList<E> list) {
+    public static <E extends Number> int countPrimeNumbers(ArrayList<E> list) {
         int count = 0;
         for (E element : list) {
             if(checkPrime((Integer) element)&&(Integer)element!=1){
